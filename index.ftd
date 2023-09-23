@@ -1,40 +1,66 @@
--- ds.page: Welcome to doc-site
+-- import: rutukapate.github.io/preview-card/sidebar
 
+-- ftd.desktop:
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+-- ftd.container: 
+width: fill-container
+height: fill-container
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+-- ftd.row:
+background.solid: #f2ebe3
+width: fill-container
+height: fill-container
+overflow-x: hidden
+align-content: center
 
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
+-- ftd.container:
+background.solid: white
+height: hug-content
+border-radius.px: 10
 
--- ds.h3: 🚀 Fast Track 
+-- sidebar.card1: PERFUME
+name: Gabrielle Essence Eau De Parfum
+body: A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
+current-value: &dollar; 149.99
+before-value: &dollar; 169.99
 
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
+-- end: ftd.container
 
--- ds.h3: 🌟 Whats next?
+-- end: ftd.row
 
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
+-- end: ftd.container
 
--- ds.h3: 👀 Want to learn more?
+-- end: ftd.desktop
 
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- ftd.mobile:
 
+-- ftd.container: 
+width: fill-container
+height: fill-container
 
--- ds.h3: 🎯 Used by?
+-- ftd.column:
+background.solid: #f2ebe3
+width: fill-container
+height: fill-container
+overflow-x: hidden
+align-content: center
 
-Our all documentation sites uses this `doc-site` theme.
+-- ftd.container:
+background.solid: white
+width.fixed.px: 400
+height: hug-content
+border-radius.px: 10
 
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
+-- sidebar.card2: PERFUME
+name: Gabrielle Essence Eau De Parfum
+body: A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL
+current-value: &dollar; 149.99
+before-value: &dollar; 169.99
 
--- ds.h2: Learn fastn and become a pro?
+-- end: ftd.container
 
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- end: ftd.column
 
--- end: ds.page
+-- end: ftd.container
+
+-- end: ftd.mobile
