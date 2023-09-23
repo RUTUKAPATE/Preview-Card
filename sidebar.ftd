@@ -1,66 +1,169 @@
--- ds.page: Page with right-sidebar 👉
-sidebar: true
+-- ftd.type dtype:
+font-family: Fraunces
+size.px: 40
 
--- ds.page.right-sidebar:
+-- ftd.type stype:
+font-family: Fraunces
+size.px: 30
 
--- ds.h3: Heading in sidebar
+-- ftd.type rtype:
+font-family: Montserrat
+size.px: 14
+line-height.px: 20
 
-You can call any component inside sidebar. 
+-- ftd.type ptype:
+font-family: Montserrat
+size.px: 14
+letter-spacing.px: 5
 
-This right-sidebar will appear on all pages.
+-- component card1:
+caption title:
+string name:
+body body:
+string current-value:
+string before-value:
+optional ftd.responsive-type role:
 
--- ds.code:
-lang: ftd
+-- ftd.row:
+width.fixed.px: 550
+height.fixed.px: 400
+border-radius.px: 10
+overflow: hidden
+ 
+-- ftd.image: $assets.files.assets.images.image-product-desktop.jpg
+height.fixed.px: 400
 
-\-- ftd.text: Hello World
+-- ftd.column:
+padding.px: 30
 
--- end: ds.page.right-sidebar
+-- ftd.text: $card1.title
+role: $ptype
+margin-bottom.px: 10
+color: #6c7289
 
--- ds.page.body:
+-- ftd.text: $card1.name
+role: $dtype
+margin-bottom.px: 10
+color: #1c232b
+style: bold
 
-If you want to show right-sidebar on your page you can add it like sidebar shown
-in this page 👉.
+-- ftd.text: $card1.body
+role: $rtype
+margin-bottom.px: 10
+color: #6c7289
 
--- ds.h3: `right-sidebar` documentation
+-- ftd.row:
+spacing.fixed.px: 10
 
-[Click here](https://fastn-community.github.io/doc-site/right-sidebar/) to read
-more about `right-sidebar`.
+-- ftd.text: $card1.current-value
+role: $stype
+style: bold
+color: #3c8067
 
--- ds.h3: How this page is built?
+-- ftd.text: $card1.before-value
+style: strike
+role: $rtype
+align-self: center
+color: #6c7289
 
-Copy below code snippet to create pages like this with right-sidebar.
+-- end: ftd.row
 
--- ds.code:
-lang: ftd
+-- ftd.row:
+spacing.fixed.px: 10
+margin-top.px: 10
+border-radius.px: 5
+background.solid.px: #3c8067
+width: fill-container
+padding.px: 10
+align-content: center
+cursor: pointer
+link: www.addtocart.com
 
-\-- ds.page: Page with right-sidebar 👉
-sidebar: true
+-- ftd.image: $assets.files.assets.images.icon-cart.svg
 
-\-- ds.page.right-sidebar:
+-- ftd.text: Add to Cart
+role: $rtype
+color: white
 
-\-- ds.h3: Heading in sidebar
+-- end: ftd.row
 
-You can call any component inside sidebar. 
+-- end: ftd.column
 
-This right-sidebar will appear on all pages.
+-- end: ftd.row
 
-\-- ds.code:
-lang: ftd
+-- end: card1
 
-\-- ftd.text: Hello World
+-- component card2:
+caption title:
+string name:
+string current-value:
+body body:
+string before-value:
+optional ftd.responsive-type role:
 
-\-- end: ds.page.right-sidebar
+-- ftd.column:
+border-radius.px: 10
+overflow: hidden
 
-\-- ds.page.body:
+-- ftd.image: $assets.files.assets.images.image-product-mobile.jpg
+width.fixed.px: 400
+height.fixed.px: 250
 
-If you want to show right-sidebar on your page you can add it like sidebar shown
-in this page 👉.
+-- ftd.column:
+padding.px: 30
 
-\-- ds.h3: Read right-sidebar documentation
+-- ftd.text: $card2.title
+role: $ptype
+margin-bottom.px: 10
+color: #6c7289
 
-[Click here](https://fastn-community.github.io/doc-site/right-sidebar/) to read
-more about `right-sidebar`.
+-- ftd.text: $card2.name
+role: $dtype
+margin-bottom.px: 10
+color: #1c232b
 
-\-- end: ds.page
+-- ftd.text: $card2.body
+role: $rtype
+margin-bottom.px: 10
+color: #6c7289
 
--- end: ds.page
+-- ftd.row:
+spacing.fixed.px: 20
+
+-- ftd.text: $card2.current-value
+role: $stype
+style: bold
+color: #3c8067
+
+-- ftd.text: $card2.before-value
+style: strike
+role: $rtype
+align-self: center
+color: #6c7289
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 10
+margin-top.px: 10
+border-radius.px: 5
+background.solid.px: #3c8067
+width: fill-container
+padding.px: 20
+align-content: center
+cursor: pointer
+link: www.addtocart.com
+
+-- ftd.image: $assets.files.assets.images.icon-cart.svg
+
+-- ftd.text: Add to Cart
+role: $rtype
+color: white
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: card2
